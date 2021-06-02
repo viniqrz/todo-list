@@ -15,10 +15,15 @@
   </header>
 
   <main>
-    <form class='main-form'>
-      <input type="text" id="texto-tarefa">
-      <button type="submit" id="criar-tarefa">Add</button>
-    </form>
+    <div class="tools-container">
+      <form class='main-form'>
+        <input type="text" id="texto-tarefa">
+        <button type="submit" id="criar-tarefa">Add</button>
+      </form>
+
+      <button id="apaga-tudo">Clear List</button>
+      <button id="remover-finalizados">Remove Completed</button>
+    </div>
   
     <div class="list-container">
       <ol id="lista-tarefas"></ol>
