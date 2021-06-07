@@ -1,42 +1,58 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <script src="https://kit.fontawesome.com/a0787ba8d3.js" crossorigin="anonymous"></script>
-  <link rel="preconnect" href="https://fonts.gstatic.com">
-  <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="style.css">
-  <script defer src="script.js"></script>
-  <title>Todo List</title>
-</head>
-<body>
-  <header>
-    <h1>Minha Lista de Tarefas</h1>
-    <p id="funcionamento">Clique duas vezes em um item para marcá-lo como completo.</p>
-  </header>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script
+      src="https://kit.fontawesome.com/a0787ba8d3.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,200;0,400;0,700;1,200;1,700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <script defer src="script.js"></script>
+    <title>Todo List</title>
+  </head>
+  <body>
+    <header>
+      <h1>Todo List</h1>
+      <p id="funcionamento">Click twice on item to mark as completed.</p>
+    </header>
 
-  <main>
-    <div class="tools-container">
-      <form class='main-form'>
-        <input type="text" id="texto-tarefa">
-        <button type="submit" id="criar-tarefa">Add</button>
-      </form>
+    <main>
+      <div class="tools-container">
+        <form class="main-form">
+          <input type="text" id="texto-tarefa" />
+          <button type="submit" id="criar-tarefa">Add</button>
+        </form>
 
-      <div class="tools-btns">
-        <button class="clear" id="apaga-tudo">Clear</button>
-        <button class="delete" id="remover-finalizados">Delete Completed</button>
-        <button class="save" id="salvar-tarefas"><i class="far fa-save"></i></button>
+        <div class="tools-btns">
+          <button class="clear" id="apaga-tudo">Clear</button>
+          <button class="delete" id="remover-finalizados">
+            Delete Completed
+          </button>
+          <button class="save" id="salvar-tarefas">
+            <i class="far fa-save"></i>
+          </button>
+        </div>
       </div>
-    </div>
-  
-    <div class="list-container">
-      <button id="mover-cima"><i class="fas fa-arrow-up"></i></button>
-      <button id="mover-baixo"><i class="fas fa-arrow-down"></i></button>
-      <button id="remover-selecionado"><i class="far fa-trash-alt"></i></button>
-      <ol id="lista-tarefas"></ol>
-    </div>
-  </main>
-</body>
+
+      <div class="list-container">
+        <button id="mover-cima"><i class="fas fa-arrow-up"></i></button>
+        <button id="mover-baixo"><i class="fas fa-arrow-down"></i></button>
+        <button id="remover-selecionado">
+          <i class="far fa-trash-alt"></i>
+        </button>
+        <ol id="lista-tarefas">
+          <li>Task 1</li>
+          <li>Task 2</li>
+          <li>Task 3</li>
+        </ol>
+      </div>
+    </main>
+  </body>
 </html>

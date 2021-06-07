@@ -2,8 +2,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: 'Roboto', sans-serif;
-  color: rgb(22, 22, 22);
+  font-family: 'Exo 2', sans-serif;
 }
 
 @keyframes attention {
@@ -27,7 +26,7 @@
 }
 
 body {
-
+  background-color: rgb(47, 47, 47);
 }
 
 button {
@@ -37,7 +36,7 @@ button {
   padding: 0rem 6px;
   border-radius: 5px;
   border: none;
-  box-shadow: 1px 1px rgba(1,1,1,0.3);
+  box-shadow: 1px 1px rgba(1, 1, 1, 0.3);
   background-color: blueviolet;
   color: white;
   font-weight: bold;
@@ -55,7 +54,7 @@ button:hover {
 }
 
 .highlight {
-  background-color: rgb(128, 128, 128);
+  background-color: rgba(100, 23, 172, 0.397);
 }
 
 .completed {
@@ -66,12 +65,20 @@ header {
   width: 40rem;
   max-width: 95%;
   margin: 1.5rem auto;
+  margin-top: 5rem;
   text-align: center;
   font-size: 1.2rem;
 }
 
+header h1 {
+  color: whitesmoke;
+  font-size: 3rem;
+  font-weight: 700;
+  font-style: italic;
+}
+
 header p {
-  color: grey;
+  color: rgb(144, 144, 144);
   animation: attention 1s infinite linear;
   margin-top: 1rem;
 }
@@ -99,9 +106,12 @@ li {
 }
 
 .main-form input {
+  outline: none;
+  border: 1px solid grey;
   height: 2.8rem;
   font-size: 1.5rem;
   width: 70%;
+  padding: 0rem 0.5rem;
   /* max-width: 20rem; */
 }
 
@@ -140,12 +150,13 @@ li {
   width: 30rem;
   max-width: 95%;
   margin: 1.5rem auto;
-  border: 2px solid black;
+  /* border: 2px solid black; */
   border-radius: 12px;
   overflow: hidden;
   padding: 1rem;
   transition: all 1s;
   text-align: right;
+  background-color: whitesmoke;
 }
 
 .list-container ol {
@@ -158,7 +169,7 @@ li {
   align-items: center;
   padding: 0 1%;
   font-size: 1.5rem;
-  border-bottom: 1px solid rgba(1,1,1, 0.2);
+  border-bottom: 1px solid rgba(1, 1, 1, 0.2);
   animation: appear 0.2s linear;
   color: rgb(44, 44, 44);
 }
